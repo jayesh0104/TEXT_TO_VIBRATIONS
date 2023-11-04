@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Vibration Converter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Text to Vibration Converter</h1>
+    <form action="/convert" method="post">
+        <label for="text">Enter text:</label>
+        <input type="text" id="text" name="text" required>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
